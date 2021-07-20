@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function del(){
+            var flag = confirm("정말로 탈퇴하시겠습니까?");
+            if(flag){
+                location.href="/member/del"
+            }else{
+                alert('탈퇴가 취소되었습니다.')
+            };
+        }
+    </script>
+</head>
+<body>
+<form action="/member/edit" method="post">
+    <table border="1">
+        <tr><th>id</th><td><input type="text" name="id" value="{{mem.id}}" readonly></td></tr>
+        <tr><th>pwd</th><td><input type="password" name="pwd" value="{{mem.pwd}}"></td></tr>
+        <tr><th>name</th><td><input type="text" name="name" value="{{mem.name}}"></td></tr>
+        <tr><th>email</th><td><input type="text" name="email" value="{{mem.email}}"></td></tr>
+        <tr><td colspan="2"> <input type="submit" value="수정">
+            <input type="button" value="삭제" onclick="del()"></td></tr>
+    </table>
+</form>
+</body>
+</html>
