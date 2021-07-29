@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">연령대별 평균 사용시간</h3>
+    <p>'분' 단위로 계산한 연령대별 이용자들의 평균 사용시간입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path1}}"/>
+</div>
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">연령대별 평균 운동량</h3>
+    <p>운동량은 "이동거리 * 사용자 체중 * 5.94/15"로 계산한 값입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path2}}"/>
+</div>
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">연령대별 평균 탄소감축량</h3>
+    <p>내연기관 대신 따릉이를 이용하여 감축시킨 탄소량(kg) 평균. 탄소량은 "이동거리 * 0.232"로 계산되었습니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path3}}"/>
+</div>
+<div class="container px-4 py-5 mb-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">연령대별 평균 이동거리</h3>
+    <p>연령대별로 따릉이를 사용하여 이동한 거리(m)의 평균입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path4}}"/>
+</div>
+{% endblock %}

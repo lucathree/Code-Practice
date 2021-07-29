@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">자치구별 전체 따릉이 이용자 수</h3>
+    <p>서울의 각 자치구별로 따릉이를 이용하는 사람들의 전체 수입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path1}}"/>
+</div>
+<div class="container px-4 py-5 mb-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">자치구별 탄소감축량</h3>
+    <p>서울의 각 자치구별로 따릉이 이용을 통해 감축시킨 탄소배출량(kg)입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path2}}"/>
+</div>
+{% endblock %}

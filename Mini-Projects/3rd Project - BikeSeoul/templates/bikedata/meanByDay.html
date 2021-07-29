@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">요일별 따릉이 사용건수</h3>
+    <p>한 달 동안의 요일별 따릉이 전체 사용건수입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path1}}"/>
+</div>
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">요일별 사용자 평균 운동량</h3>
+    <p>요일별 사용자들의 평균 운동량입니다. (운동량 = 이동거리 * 사용자 체중 * 5.94/15)</p>
+    <img class="img-fluid mx-auto" src="{{img_path2}}"/>
+</div>
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">요일별 평균 따릉이 사용시간</h3>
+    <p>요일별 사용자들의 평균 따릉이 사용시간(m)입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path3}}"/>
+</div>
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">요일별 연령대 평균 사용건수</h3>
+    <p>요일별로 각 연령대에서 평균적으로 따릉이를 얼마나 사용했는지 나타내는 그래프입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path4}}"/>
+</div>
+<div class="container px-4 py-5 mb-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">요일별 성별 평균 사용건수</h3>
+    <p>요일별로 각 성별에서 평균적으로 따릉이를 얼마나 사용했는지 나타내는 그래프입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path5}}"/>
+</div>
+{% endblock %}

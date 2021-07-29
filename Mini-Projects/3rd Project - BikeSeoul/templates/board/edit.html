@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container container-md my-5 mx-auto col-8">
+    <h1 class="h4 col-8 mb-3 mx-auto fw-bold">게시물 수정</h1>
+    <form action="/board/edit" method="post" class="col-8 mx-auto px-4 py-4 border">
+        <div class="mb-3">
+            <label for="title" class="form-label fw-bold">제목</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{b.title}}">
+        </div>
+        <div class="mb-5">
+            <label for="content" class="form-label fw-bold">내용</label>
+            <textarea class="form-control" id="content" name="content" rows="8">{{b.content}}</textarea>
+        </div>
+        <div class="d-grid gap-2">
+            <input type="hidden" name="num" value="{{b.num}}">
+            <input type="submit" class="btn btn-success d-block" value="수정">
+            <input type="button" onclick="location.href='/board'" class="btn btn-secondary d-block" value="취소">
+        </div>
+    </form>
+</div>
+
+{% endblock %}
