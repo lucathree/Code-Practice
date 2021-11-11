@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container container-md my-5 mx-auto col-8">
+    <h1 class="h4 col-8 mb-3 mx-auto fw-bold">이용내역 등록하기</h1>
+    <div class="container-bordered">
+    <form action="/history/add" method="post" class="col-8 mx-auto px-4 py-4 border">
+        <div class="mb-3">
+            <label for="rent_date" class="form-label fw-bold">대여일</label>
+            <input type="date" class="form-control" id="rent_date" name="rent_date">
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="rent_station" class="form-label fw-bold">대여한 보관소</label>
+                <select class="form-select" id="rent_station" name="rent_station">
+                    <option selected>보관소명</option>
+                    {% for s in stlst %}
+                    <option value="{{s}}">{{s}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col">
+                <label for="return_station" class="form-label fw-bold">반납한 보관소</label>
+                <select class="form-select" id="return_station" name="return_station">
+                    <option selected>보관소명</option>
+                    {% for s in stlst %}
+                    <option value="{{s}}">{{s}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="rent_time" class="form-label fw-bold">대여시간</label>
+                <input type="time" class="form-control" id="rent_time" name="rent_time">
+            </div>
+            <div class="col">
+                <label for="return_time" class="form-label fw-bold">반납시간</label>
+                <input type="time" class="form-control" id="return_time" name="return_time">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="distance" class="form-label fw-bold">예상 이동거리</label>
+            <input type="number" step="0.01" class="form-control" id="distance" name="distance" placeholder="0m">
+        </div>
+        <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-success d-block" value="등록">
+            <input type="button" onclick="location.href='/history'" class="btn btn-secondary d-block" value="취소">
+        </div>
+    </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% with messages = get_flashed_messages() %}
+    {%if messages %}
+    <script type="text/javascript">
+        alert("{{messages[-1]}}");
+        window.location = '/'
+    </script>
+    {% endif %}
+    {% endwith %}
+</head>
+<body>
+</body>
+</html>

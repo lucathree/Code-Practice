@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container px-4 pt-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">시간대별 평균 따릉이 대여건수</h3>
+    <p>각 시간대별로 대여된 따릉이의 평균 수입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path1}}"/>
+</div>
+<div class="container px-4 py-5 mb-5 col-7">
+    <h3 class="pb-2 border-bottom fw-bold">시간대별 평균 따릉이 사용시간</h3>
+    <p>각 시간대별로 대여된 따릉이의 평균 사용시간(m)입니다.</p>
+    <img class="img-fluid mx-auto" src="{{img_path2}}"/>
+</div>
+{% endblock %}

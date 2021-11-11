@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<body>
+    <h3>로그인</h3>
+    <form action="/member/login" method="post">
+        id:<input type="text" name="id"><br/>
+        pwd:<input type="password" name="pwd"><br/>
+        {{msg}}
+        <input type="submit" value="login">
+    </form>
+    <a href="/member/join">회원가입</a>
+</body>
+</html>
