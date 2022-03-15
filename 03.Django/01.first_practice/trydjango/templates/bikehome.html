@@ -1,0 +1,32 @@
+{% extends "bikebase.html" %}
+
+{% block content %}
+    <div class="position-relative overflow-hidden text-center text-white" style="background-color:#20c997">
+        <div class="col-md-8 p-lg-5 mx-auto my-4">
+            <h1 class="display-5 fw-bold">같이타요, 따릉이!</h1>
+            <p class="lead fw-normal">"Project따릉이"와 함께<br/>더 즐거운 따릉이 커뮤니티를 만나보세요</p>
+            <a class="btn btn-light" href="/member/join">가입하기</a>
+        </div>
+    </div>
+    <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0" align="center">
+                        <a href="/history"><img src="/static/img/bike_icon.jpg" width="50%"/></a>
+                        <h2 class="h4 fw-bolder">My따릉이</h2>
+                        <p style="font-size:14px">나의 따릉이 이용내용을 기록해보세요</p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0" align="center">
+                        <a href="/bikedata"><img src="/static/img/comm_icon.jpg" width="50%"/></a>
+                        <h2 class="h4 fw-bolder">이용통계</h2>
+                        <p style="font-size:14px">따릉이 커뮤니티는 따릉이를 어떻게 이용하고 있는지 확인해보세요</p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0" align="center">
+                        <a href="/board"><img src="/static/img/chat_icon.jpg" width="50%"/></a>
+                        <h2 class="h4 fw-bolder">커뮤니티</h2>
+                        <p style="font-size:14px">다른 따릉이 이용자들과 의견을 공유하고 함께 라이딩도 즐겨보세요</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
