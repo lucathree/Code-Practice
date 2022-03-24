@@ -1,0 +1,57 @@
+2022-03-24 14:41:13,939 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:41:13,945 INFO supervisord started with pid 618
+2022-03-24 14:41:14,947 INFO spawnerr: can't find command '/app/counter.py'
+2022-03-24 14:41:15,950 INFO spawnerr: can't find command '/app/counter.py'
+2022-03-24 14:41:17,954 INFO spawnerr: can't find command '/app/counter.py'
+2022-03-24 14:41:20,960 INFO spawnerr: can't find command '/app/counter.py'
+2022-03-24 14:41:20,960 INFO gave up: counter entered FATAL state, too many start retries too quickly
+2022-03-24 14:41:26,971 WARN received SIGINT indicating exit request
+2022-03-24 14:41:42,396 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:41:42,400 INFO supervisord started with pid 620
+2022-03-24 14:41:43,405 INFO spawned: 'counter' with pid 622
+2022-03-24 14:41:43,409 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:41:44,414 INFO spawned: 'counter' with pid 623
+2022-03-24 14:41:44,419 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:41:46,425 INFO spawned: 'counter' with pid 624
+2022-03-24 14:41:46,430 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:41:49,437 INFO spawned: 'counter' with pid 625
+2022-03-24 14:41:49,441 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:41:50,443 INFO gave up: counter entered FATAL state, too many start retries too quickly
+2022-03-24 14:41:58,455 WARN received SIGINT indicating exit request
+2022-03-24 14:43:02,567 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:43:02,571 INFO supervisord started with pid 626
+2022-03-24 14:43:03,576 INFO spawned: 'counter' with pid 628
+2022-03-24 14:43:03,585 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:43:04,591 INFO spawned: 'counter' with pid 629
+2022-03-24 14:43:04,596 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:43:06,603 INFO spawned: 'counter' with pid 630
+2022-03-24 14:43:06,607 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:43:09,614 INFO spawned: 'counter' with pid 631
+2022-03-24 14:43:09,615 WARN received SIGINT indicating exit request
+2022-03-24 14:43:09,615 INFO waiting for counter to die
+2022-03-24 14:43:09,618 INFO stopped: counter (exit status 127)
+2022-03-24 14:45:49,944 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:45:49,948 INFO supervisord started with pid 632
+2022-03-24 14:45:50,952 INFO spawned: 'counter' with pid 634
+2022-03-24 14:45:50,961 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:45:51,966 INFO spawned: 'counter' with pid 635
+2022-03-24 14:45:51,970 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:45:53,977 INFO spawned: 'counter' with pid 636
+2022-03-24 14:46:04,337 INFO exited: counter (exit status 127; not expected)
+2022-03-24 14:46:05,342 INFO spawned: 'counter' with pid 637
+2022-03-24 14:46:05,343 WARN received SIGINT indicating exit request
+2022-03-24 14:46:05,343 INFO waiting for counter to die
+2022-03-24 14:46:05,346 INFO stopped: counter (exit status 127)
+2022-03-24 14:47:24,343 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:47:24,347 INFO supervisord started with pid 643
+2022-03-24 14:47:25,350 INFO spawned: 'counter' with pid 645
+2022-03-24 14:47:26,352 INFO success: counter entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-03-24 14:47:46,380 WARN received SIGINT indicating exit request
+2022-03-24 14:47:46,381 INFO waiting for counter to die
+2022-03-24 14:47:46,382 INFO stopped: counter (terminated by SIGTERM)
+2022-03-24 14:50:18,087 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-03-24 14:50:18,091 INFO supervisord started with pid 649
+2022-03-24 14:50:19,094 INFO spawned: 'counter' with pid 651
+2022-03-24 14:50:20,096 INFO success: counter entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-03-24 14:51:58,230 INFO exited: counter (exit status 0; expected)
+2022-03-24 14:54:22,422 WARN received SIGINT indicating exit request

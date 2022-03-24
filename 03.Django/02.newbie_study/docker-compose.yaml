@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=postgrespw
+  
+  django:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
