@@ -2,16 +2,21 @@ version: "3"
 
 services:
   db:
+    container_name: postgres
     image: postgres
     environment:
       - POSTGRES_USER=postgresuser
       - POSTGRES_PASSWORD=postgrespw
+    volumes:
+      - ./postgresDB:/var/lib/postgresql/data
   
   django:
+    container_name: django_application
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: supervisord -c supervisord.conf
     ports:
       - "8000:8000"
+      - "9001:9001"
     volumes:
       - .:/app
     depends_on:
