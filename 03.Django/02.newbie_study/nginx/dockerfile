@@ -1,0 +1,6 @@
+FROM nginx
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./nginx/newb.conf /etc/nginx/conf.d/newb.conf
+
+COPY ./static /static

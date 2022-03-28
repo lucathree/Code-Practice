@@ -2,3 +2,5 @@ Django==4.0.3
 psycopg2
 gunicorn
 supervisor
+drf-yasg
+djangorestframework

@@ -53,3 +53,363 @@ Watching for file changes with StatReloader
 [26/Mar/2022 17:06:11] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
 [26/Mar/2022 17:06:11] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
 [26/Mar/2022 17:06:11] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+Watching for file changes with StatReloader
+[26/Mar/2022 19:56:48] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 19:56:48] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Mar/2022 19:56:48] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Mar/2022 19:56:48] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Mar/2022 19:56:48] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[26/Mar/2022 20:04:32] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:04:32] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 20:04:32] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:04:32] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:04:32] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:04:40] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:04:44] "GET /admin/ HTTP/1.1" 200 3653
+[26/Mar/2022 20:04:44] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Mar/2022 20:04:44] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+[26/Mar/2022 20:04:44] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[26/Mar/2022 20:04:44] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+[26/Mar/2022 20:04:44] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+[26/Mar/2022 20:04:44] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Mar/2022 20:04:44] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Mar/2022 20:10:13] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:10:13] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 20:10:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:10:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:10:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/urls.py", line 107, in check_url_settings
+    value = getattr(settings, name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 93, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 140, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'PosixPath' object has no attribute 'startswith'
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/urls.py", line 107, in check_url_settings
+    value = getattr(settings, name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 93, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 140, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'PosixPath' object has no attribute 'startswith'
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+[26/Mar/2022 20:31:33] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:31:33] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Mar/2022 20:31:33] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Mar/2022 20:31:33] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Mar/2022 20:31:33] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Mar/2022 20:32:02] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:32:02] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+[26/Mar/2022 20:34:46] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:34:46] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 20:34:46] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:34:46] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:34:46] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:34:52] "GET /admin/ HTTP/1.1" 200 3653
+[26/Mar/2022 20:34:52] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Mar/2022 20:34:52] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[26/Mar/2022 20:34:52] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+[26/Mar/2022 20:34:52] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+[26/Mar/2022 20:34:52] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+[26/Mar/2022 20:34:52] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Mar/2022 20:34:52] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Mar/2022 20:34:56] "GET / HTTP/1.1" 200 10773
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/site-packages/django/core/checks/urls.py", line 107, in check_url_settings
+    value = getattr(settings, name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 93, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 140, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'PosixPath' object has no attribute 'startswith'
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+[26/Mar/2022 20:36:34] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:36:34] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 20:36:34] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:36:34] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 20:36:34] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+Invalid HTTP_HOST header: '172.30.1.46:8000'. You may need to add '172.30.1.46' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Mar/2022 20:57:36] "GET / HTTP/1.1" 400 58958
+Invalid HTTP_HOST header: '172.30.1.46:8000'. You may need to add '172.30.1.46' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[26/Mar/2022 20:57:36] "GET /favicon.ico HTTP/1.1" 400 59013
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+[26/Mar/2022 20:58:08] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 20:58:08] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Mar/2022 20:58:08] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Mar/2022 20:58:08] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Mar/2022 20:58:08] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+[26/Mar/2022 20:58:08] "GET /favicon.ico HTTP/1.1" 404 2110
+[26/Mar/2022 21:17:20] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 21:17:20] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 21:17:20] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:17:20] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:17:20] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:20:04] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 21:20:14] "GET / HTTP/1.1" 200 10773
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Mar/2022 21:20:18] "GET / HTTP/1.1" 400 60882
+[26/Mar/2022 21:22:09] "GET / HTTP/1.1" 200 10773
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[26/Mar/2022 21:31:11] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 21:31:11] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Mar/2022 21:31:11] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Mar/2022 21:31:11] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Mar/2022 21:31:11] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Mar/2022 21:41:50] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 21:41:50] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 21:41:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:41:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:41:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:57:58] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 21:57:58] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 21:57:58] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:57:58] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 21:57:58] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 22:12:53] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 22:12:53] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 22:12:54] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 22:12:54] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 22:12:54] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  the database system is starting up
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+    self.check_migrations()
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 576, in check_migrations
+    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 58, in __init__
+    self.build_graph()
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+    self.applied_migrations = recorder.applied_migrations()
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 81, in applied_migrations
+    if self.has_table():
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 57, in has_table
+    with self.connection.cursor() as cursor:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 284, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 260, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: FATAL:  the database system is starting up
+
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[26/Mar/2022 22:46:53] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 22:46:53] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Mar/2022 22:46:53] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Mar/2022 22:46:53] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Mar/2022 22:46:53] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+[26/Mar/2022 22:46:53] "GET /favicon.ico HTTP/1.1" 404 2108
+[26/Mar/2022 22:47:00] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 23:11:51] "GET / HTTP/1.1" 200 10773
+[26/Mar/2022 23:11:51] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Mar/2022 23:11:51] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 23:11:51] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Mar/2022 23:11:51] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[28/Mar/2022 00:29:03] "GET / HTTP/1.1" 200 10773
+[28/Mar/2022 00:29:03] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[28/Mar/2022 00:29:03] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[28/Mar/2022 00:29:03] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[28/Mar/2022 00:29:03] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  the database system is starting up
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+    self.check_migrations()
+  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 576, in check_migrations
+    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 58, in __init__
+    self.build_graph()
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+    self.applied_migrations = recorder.applied_migrations()
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 81, in applied_migrations
+    if self.has_table():
+  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 57, in has_table
+    with self.connection.cursor() as cursor:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 284, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 260, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 244, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: FATAL:  the database system is starting up
+
+Watching for file changes with StatReloader
+[29/Mar/2022 01:15:54] "GET / HTTP/1.1" 200 10773
+[29/Mar/2022 01:15:54] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[29/Mar/2022 01:15:54] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[29/Mar/2022 01:15:54] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[29/Mar/2022 01:15:54] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[29/Mar/2022 01:15:54] "GET /favicon.ico HTTP/1.1" 404 2108
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/app/newb/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[29/Mar/2022 03:50:48] "GET / HTTP/1.1" 200 10773
+[29/Mar/2022 03:51:02] "GET / HTTP/1.1" 200 10773
+[29/Mar/2022 03:51:05] "GET /admin HTTP/1.1" 301 0
+[29/Mar/2022 03:51:05] "GET /admin/ HTTP/1.1" 200 3653
+[29/Mar/2022 03:51:05] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+[29/Mar/2022 03:51:05] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[29/Mar/2022 03:51:05] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+[29/Mar/2022 03:51:05] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[29/Mar/2022 03:51:05] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+[29/Mar/2022 03:51:05] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[29/Mar/2022 03:51:05] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[29/Mar/2022 03:51:14] "GET / HTTP/1.1" 200 10773
+Watching for file changes with StatReloader

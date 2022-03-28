@@ -10,15 +10,26 @@ services:
     volumes:
       - ./postgresDB:/var/lib/postgresql/data
   
-  django:
-    container_name: django_application
+  was:
+    container_name: django_gunicorn
     build: .
     command: supervisord -c supervisord.conf
     ports:
       - "8000:8000"
-      - "8001:8001"
       - "9001:9001"
+    expose:
+      - 8001
     volumes:
       - .:/app
     depends_on:
       - db
+
+  server:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: ./nginx/dockerfile
+    ports:
+      - "8002:80"
+    depends_on:
+      - was
