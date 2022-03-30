@@ -4,3 +4,4 @@ gunicorn
 supervisor
 drf-yasg
 djangorestframework
+Pillow
