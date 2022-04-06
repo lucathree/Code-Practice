@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./toyproject:/app
+    ports:
+      - 8000:8000
+      - 8001:8001
+      - 9001:9001
+    command: supervisord -c supervisord.conf
+    depends_on:
+      - db
+      - nginx
+
+  db:
+    image: postgres
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgrespw
+    restart: always
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/dockerfile
+    volumes:
+      - ./toyproject/static:/static
+    ports:
+      - 80:80
+    restart: always
+
+volumes:
+  postgresDB:

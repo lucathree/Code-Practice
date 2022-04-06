@@ -1,0 +1,4 @@
+FROM nginx
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./nginx/toyproject.conf /etc/nginx/conf.d/toyproject.conf
