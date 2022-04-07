@@ -4,3 +4,7 @@ psycopg2
 gunicorn
 supervisor
 Pillow
+redis
+rq
+django-rq
+drf-yasg

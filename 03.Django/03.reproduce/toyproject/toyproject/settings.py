@@ -42,6 +42,8 @@ INSTALLED_APPS = [
 INSTALLED_APPS += [
     'rest_framework',
     'gallery',
+    'django_rq',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -112,9 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -131,3 +133,25 @@ STATIC_ROOT = BASE_DIR.joinpath('static')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR.joinpath('media')
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://192.168.4.34:6379/0",
+    }
+}
+
+RQ_QUEUES = {
+    # 'default': {
+    #     'HOST': 'redis',
+    #     'PORT': 6379,
+    #     'DB': 0,
+    #     'DEFAULT_TIMEOUT': 360,
+    # }
+    'default': {
+        'USE_REDIS_CACHE': 'default',
+    }
+}
