@@ -5,3 +5,4 @@ git flow 테스트를 위한 파일입니다.
 2022.04.12 10:18AM develop에 추가 커밋  
 2022.04.12 11:59AM release에서 변경사항 커밋
 2022.04.12 12:06PM release에서 추가 커밋, 이전 커밋까지는 develop에 merge 되었음    
+2022.04.12 12:14PM release에서 추가 커밋. feature 변동사항 안 보임  
