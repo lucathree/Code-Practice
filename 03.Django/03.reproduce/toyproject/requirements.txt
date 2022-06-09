@@ -7,4 +7,5 @@ Pillow
 redis
 rq
 django-rq
+django-redis
 drf-yasg

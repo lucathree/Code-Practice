@@ -140,7 +140,8 @@ MEDIA_ROOT = BASE_DIR.joinpath('media')
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.4.34:6379/0",
+        # "LOCATION": "redis://192.168.4.34:6379/0",
+        "LOCATION": "redis://localhost:6379/0",
     }
 }
 
