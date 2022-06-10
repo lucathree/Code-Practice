@@ -1,0 +1,12 @@
+body {
+  background-color: gold;
+  color: white;
+}
+
+.windowUnder1400 {
+  background-color: violet;
+}
+
+.windowUnder800 {
+  background-color: cornflowerblue;
+}
