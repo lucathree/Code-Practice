@@ -1,2 +1,4 @@
 1. initial commit (master)
 2. commit on feature branch
+3. commit on feature branch after merge
+4. commit on feature branch before merge commit 3. to develop
