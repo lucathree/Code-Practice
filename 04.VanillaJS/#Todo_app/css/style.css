@@ -1,0 +1,119 @@
+@font-face {
+  font-family: VcrOsdMono;
+  src:url("../fonts/vcr_osd_mono-webfont.woff") format("woff"),
+      url("../fonts/vcr_osd_mono-webfont.woff2") format("woff2"),
+      url("../fonts/vcr_osd_mono.ttf") format("truetype")
+  }
+
+body {
+  font-family: VcrOsdMono, "VCR OSD Mono", Helvetica, Verdana, sans-serif;
+  margin: 0;
+  background-image: url('../img/14.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 3;
+}
+
+.login input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid aquamarine;
+  width: 260px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  outline:transparent;
+}
+
+.login input::placeholder {
+  color: lime;
+}
+
+.background-layer-login {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  color: aliceblue;
+}
+
+.background-layer-main {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  align-content: space-between;
+  color: aquamarine;
+  z-index: 2;
+}
+
+#greeting {
+  margin: 32px;
+  font-size: 21px;
+  font-weight: 400;
+  flex-grow: 1;
+}
+
+#hi {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#info {
+  margin: 32px;
+  text-align: right;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+#taskList {
+  flex-basis: 100%; 
+}
+
+#musicPlayer {
+  margin: 32px;
+  line-height: 32px;
+  flex-grow: 1;
+}
+
+#changeBackground {
+  margin: 32px;
+  flex-grow: 1;
+}
+
+#shuffle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+  cursor: pointer;
+}
+
+#taskButton {
+  margin: 32px;
+  flex-grow: 1;
+  text-align: right;
+}

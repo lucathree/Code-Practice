@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lofi Study App</title>
+  </head>
+  <body>
+    <div id="loginWrapper" class="login-wrapper background-layer-login">
+      <div class="login">
+        <h1>Welcome!</h1>
+        <h4>Please enter your name to start</h4>
+        <form id="nameForm">
+          <input type="text" required maxlength="14" placeholder="Enter Name"/>
+        </form>
+      </div>
+    </div>
+    <div id="mainWrapper" class="main-wrapper background-layer-main hidden">
+      <div id="greeting">
+        <div id="hi"></div>
+        <span>
+          Enjoy your studytime with lofi music
+        </span>
+      </div>
+      <div id="info">
+        <div id="weather">
+          <span></span> <span></span> <span></span>
+        </div>
+        <div id="clock"></div>
+      </div>
+      <div id="taskList"></div>
+      <div id="musicPlayer">music</div>
+      <div id="changeBackground">
+        <img src="./img/shuffle.svg" id="shuffle"/>
+      </div>
+      <div id="taskButton">task</div>
+    </div>
+    
+<!-- 
+
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div> -->
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
