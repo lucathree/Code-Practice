@@ -10,13 +10,13 @@
     <div id="loginWrapper" class="login-wrapper background-layer-login">
       <div class="login">
         <h1>Welcome!</h1>
-        <h4>Please enter your name to start</h4>
+        <h3>Please enter your name to start</h3>
         <form id="nameForm">
           <input type="text" required maxlength="14" placeholder="Enter Name"/>
         </form>
       </div>
     </div>
-    <div id="mainWrapper" class="main-wrapper background-layer-main hidden">
+    <div id="mainWrapper" class="background-layer-main hidden">
       <div id="greeting">
         <div id="hi"></div>
         <span>
@@ -29,42 +29,39 @@
         </div>
         <div id="clock"></div>
       </div>
-      <div id="taskList"></div>
-      <div id="musicPlayer">music</div>
-      <div id="changeBackground">
-        <img src="./img/shuffle.svg" id="shuffle"/>
+      <div id="taskList">
+        <div id="list-wrapper" class="hidden">
+          <div id="list">
+            <form id="task-form">
+              <input id="task-input" type="text" placeholder="Write your task and press Enter" required/>
+            </form>
+            <ul id="entered-list"></ul>
+          </div>
+        </div>
       </div>
-      <div id="taskButton">task</div>
+      <div id="bottomMenu">
+        <div id="musicPlayer">
+          <div id="ytplayer"></div>
+          <img title="play" src="./img/play.svg" id="play"/>
+          <img title="pause" src="./img/pause.svg" id="pause"/>
+          <img title="next" src="./img/forward.svg" id="next"/>
+          <span id="channelName">lofi hip hop radio - beats to relax/study to</span>
+        </div>
+        <div id="icons">
+          <img title="shuffle background" src="./img/shuffle.svg" id="shuffle"/>
+          <img title="logout" src="./img/logout.svg" id="logout"/>
+        </div>
+        <div id="task">
+          <div id="taskButton">Open Task</div>
+        </div>
+      </div>
     </div>
     
-<!-- 
-
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div> -->
     <script src="js/background.js"></script>
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/task.js"></script>
   </body>
 </html>

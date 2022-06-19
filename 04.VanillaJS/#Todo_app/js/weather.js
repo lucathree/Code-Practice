@@ -9,6 +9,17 @@ navigator.geolocation.getCurrentPosition(onSuccess, onFail);
 function onSuccess(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
+  fetchWeather(lat, lon);
+}
+function onFail() {
+  alert("Cound not find your location. Showing default weather.");
+
+  const SEOUL_LAT = 37.568;
+  const SEOUL_LON = 126.978;
+  fetchWeather(SEOUL_LAT, SEOUL_LON);
+}
+
+function fetchWeather(lat, lon) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url).then((response) => response.json()).then((data) => {
       city.innerText = `${data.name}:`;
@@ -16,8 +27,3 @@ function onSuccess(position) {
       weather.innerText = data.weather[0].main;
     });
 }
-function onFail() {
-  alert("Cound not find your location. Showing default weather.");
-}
-
-

@@ -1,10 +1,11 @@
 const loginForm = document.querySelector("#nameForm");
-const loginInput = document.querySelector("#nameForm input")
-const loginWrapper = document.querySelector("#loginWrapper")
-const mainWrapper = document.querySelector("#mainWrapper")
+const loginInput = document.querySelector("#nameForm input");
+const loginWrapper = document.querySelector("#loginWrapper");
+const mainWrapper = document.querySelector("#mainWrapper");
+const logoutButton = document.querySelector("#logout");
 
-const USERNAME_KEY = "username"
-const HIDDEN = "hidden"
+const USERNAME_KEY = "username";
+const HIDDEN = "hidden";
 
 function handleLogin(event) {
     event.preventDefault();
@@ -12,20 +13,44 @@ function handleLogin(event) {
     paintMain(loginInput.value);
 }
 
+function handleLogout(event) {
+    event.preventDefault();
+    const input = confirm("Do you really want to logout? All of your tasks will be removed.");
+
+    if (input === true) {
+        localStorage.removeItem(USERNAME_KEY);
+        localStorage.removeItem("tasks");
+        document.querySelector("#entered-list").innerHTML = "";
+        loginWrapper.classList.add("login-wrapper");
+        loginWrapper.classList.remove(HIDDEN);
+        mainWrapper.classList.add(HIDDEN);
+        mainWrapper.classList.remove("main-wrapper")
+    }
+}
+
 function paintMain(username) {
     loginWrapper.classList.remove("login-wrapper");
     loginWrapper.classList.add(HIDDEN);
     mainWrapper.classList.remove(HIDDEN);
-    const greeting = document.querySelector("#hi")
-    greeting.innerText = `Hello ${username},`
+    mainWrapper.classList.add("main-wrapper")
+    const greeting = document.querySelector("#hi");
+    greeting.innerText = `Hello ${username},`;
 }
+
+function paintLogin() {
+    loginWrapper.classList.add("login-wrapper");
+    loginWrapper.classList.remove(HIDDEN);
+    mainWrapper.classList.add(HIDDEN);
+    mainWrapper.classList.remove("main-wrapper")
+}
+
+loginForm.addEventListener("submit", handleLogin);
+logoutButton.addEventListener("click", handleLogout);
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
-    loginWrapper.classList.remove(HIDDEN);
-    loginForm.addEventListener("submit", handleLogin);
+    paintLogin();
 } else {
     paintMain(savedUsername);
 }
-  
