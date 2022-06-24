@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lofi Study App</title>
+  </head>
+  <body>
+    <div id="loginWrapper" class="login-wrapper background-layer-login">
+      <div class="login">
+        <h1>Welcome!</h1>
+        <h3>Please enter your name to start</h3>
+        <form id="nameForm">
+          <input type="text" required maxlength="14" placeholder="Enter Name"/>
+        </form>
+      </div>
+    </div>
+    <div id="mainWrapper" class="background-layer-main hidden">
+      <div id="greeting">
+        <div id="hi"></div>
+        <span>
+          Enjoy your studytime with lofi music
+        </span>
+      </div>
+      <div id="info">
+        <div id="weather">
+          <span></span> <span></span> <span></span>
+        </div>
+        <div id="clock"></div>
+      </div>
+      <div id="taskList">
+        <div id="list-wrapper" class="hidden">
+          <div id="list">
+            <form id="task-form">
+              <input id="task-input" type="text" placeholder="Write your task and press Enter" required/>
+            </form>
+            <ul id="entered-list"></ul>
+          </div>
+        </div>
+      </div>
+      <div id="bottomMenu">
+        <div id="musicPlayer">
+          <div id="ytplayer"></div>
+          <img title="play" src="./img/play.svg" id="play"/>
+          <img title="pause" src="./img/pause.svg" id="pause"/>
+          <img title="next" src="./img/forward.svg" id="next"/>
+          <span id="channelName">lofi hip hop radio - beats to relax/study to</span>
+        </div>
+        <div id="icons">
+          <img title="shuffle background" src="./img/shuffle.svg" id="shuffle"/>
+          <img title="logout" src="./img/logout.svg" id="logout"/>
+        </div>
+        <div id="task">
+          <div id="taskButton">Open Task</div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/task.js"></script>
+  </body>
+</html>
