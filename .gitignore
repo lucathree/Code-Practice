@@ -1,5 +1,7 @@
 03.Django/02.newbie_study/postgresDB/
 
 *.pyc
-
 *.log
+node_modules/
+
+
