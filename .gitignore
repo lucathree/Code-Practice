@@ -3,5 +3,12 @@
 *.pyc
 *.log
 node_modules/
+__pycache__
+db.sqlite3
+
+# 외부 기술과제 결과물 생략
+mock
+sample.Dockerfile
+tox.ini
 
 

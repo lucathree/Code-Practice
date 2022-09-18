@@ -1,0 +1,12 @@
+FROM python:3.9.5
+
+ENV PYTHONUNBUFFERED=1
+WORKDIR /app
+
+COPY . .
+
+RUN apt-get update
+RUN pip install --upgrade pip
+RUN pip install poetry
+RUN poetry install
+RUN poetry config virtualenvs.in-project true

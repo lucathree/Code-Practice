@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  sample:
+    container_name: sample
+    image: sample:latest
+    build:
+      context: .
+      dockerfile: sample.Dockerfile
+    ports:
+      - "9000:9000"
+
+  redis:
+    container_name: redis
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d
+      - ./app/static:/app/static
+    ports:
+      - 8000:8000
+
+  musicapi:
+    container_name: music_api
+    build:
+      context: .
+      dockerfile: dockerfile
+    working_dir: /app/app
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+    command: poetry run gunicorn musicapi.wsgi:application --bind 0.0.0.0:8080
